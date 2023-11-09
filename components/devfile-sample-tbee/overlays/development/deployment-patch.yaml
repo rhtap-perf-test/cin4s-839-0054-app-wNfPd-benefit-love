@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tbee
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0054-tenant/cin4s-839-0054-app/devfile-sample-tbee@sha256:a04f6b13675f194f0443955e8b8e66472e6ca974d3e6e262a2acb65427f2c425
+        name: my-nodejs
+        resources: {}
+status: {}
